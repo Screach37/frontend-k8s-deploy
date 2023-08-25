@@ -17,6 +17,7 @@ docker build -t repo/image_name:version .
 
 ### `Kubernetes`
 
-minikube start
-kubectl apply -f frontEndDeploy.yml
-kubectl apply -f frontEndSvc.yml
+minikube start \
+kubectl apply -f frontEndDeploy.yml \
+kubectl apply -f frontEndSvc.yml \
+kubectl get pods -ow wide
